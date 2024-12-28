@@ -1,7 +1,7 @@
 import { links } from './data'
 export default function NavBar() {
   return (
-    <nav className="bg-emerald-100 px-6 py-8  flex flex-row gap-x-12 sm:flex-col sm:gap-y-5">
+    <nav className="bg-emerald-100 px-6 align-element  flex flex-row gap-x-12 sm:flex-col sm:gap-y-5">
       <h2 className="text-3xl font-bold">
         Web<span className="text-emerald-700">Dev</span>
       </h2>

@@ -1,8 +1,8 @@
-import { FaGithubSquare, FaGitSquare, FaLinkedin, FaTwitter, FaTwitterSquare } from 'react-icons/fa'
+import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
 
 function Home() {
   return (
-    <section className="  bg-emerald-100 py-24">
+    <section className="bg-emerald-100 py-24">
       <div className=" grid md:grid-cols-2 px-8 mx-auto max-w-7xl">
         <article>
           <h1 className="text-7xl font-bold tracking-wider">I'm Raman</h1>
@@ -13,13 +13,13 @@ function Home() {
             Turning Ideas into Interactive Reality
           </p>
           <div className="flex gap-x-4 mt-4">
-            <a href="">
+            <a href="https://github.com/rewatiramanprasad">
               <FaGithubSquare className="h-8 w-8 text-slate-700  hover:text-black duration-300" />
             </a>
             <a href="https://www.linkedin.com/in/rewatiramanprasad/">
               <FaLinkedin className="h-8 w-8 text-slate-700  hover:text-black duration-300 " />
             </a>
-            <a href="">
+            <a href="#twitter">
               <FaTwitterSquare className="h-8 w-8 text-slate-700  hover:text-black duration-300 " />
             </a>
           </div>

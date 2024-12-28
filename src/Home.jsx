@@ -1,9 +1,10 @@
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa'
+import hero from './assets/hero.svg'
 
 function Home() {
   return (
     <section className="bg-emerald-100 py-24">
-      <div className=" grid md:grid-cols-2 px-8 mx-auto max-w-7xl">
+      <div className=" grid md:grid-cols-2 align-element">
         <article>
           <h1 className="text-7xl font-bold tracking-wider">I'm Raman</h1>
           <p className=" mt-4 text-3xl text-slate-700 capitalize tracking-wider ">
@@ -23,6 +24,9 @@ function Home() {
               <FaTwitterSquare className="h-8 w-8 text-slate-700  hover:text-black duration-300 " />
             </a>
           </div>
+        </article>
+        <article className="hidden md:block">
+          <img src={hero} className="h-80 lg:h-96" />
         </article>
       </div>
     </section>

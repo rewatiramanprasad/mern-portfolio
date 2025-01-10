@@ -1,5 +1,5 @@
 import React from 'react'
-import SkillCard from './skillCard'
+import SkillCard from './SkillCard'
 import { skills } from './data'
 import SectionTitle from './SectionTitle'
 

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import SectionTitle from './SectionTitle'
 import { projects } from './data'
 import ProjectCard from './ProjectCard'

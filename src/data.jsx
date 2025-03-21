@@ -1,11 +1,21 @@
 import { nanoid } from 'nanoid'
-import { FaHtml5, FaJs, FaReact } from 'react-icons/fa'
+import { FaHtml5, FaJs, FaReact, FaAws, FaStripe } from 'react-icons/fa'
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiTypescript,
+  SiClerk,
+  SiReactquery,
+  SiMysql,
+} from 'react-icons/si'
 
 export const links = [
   { id: nanoid(), href: '#Home', label: 'Home' },
   { id: nanoid(), href: '#About', label: 'About' },
   { id: nanoid(), href: '#Skills', label: 'Skills' },
   { id: nanoid(), href: '#Projects', label: 'Projects' },
+  { id: nanoid(), href: '#Contact', label: 'Contact' },
 ]
 
 export const skills = [
@@ -26,6 +36,60 @@ export const skills = [
     title: 'React',
     icon: <FaReact className="h-16 w-16 text-emerald-500" />,
     text: 'Advanced proficiency in React, developing efficient and interactive front-end applications with a strong emphasis on component-based architecture.',
+  },
+  {
+    id: nanoid(),
+    title: 'Next.js',
+    icon: <SiNextdotjs className="h-16 w-16 text-emerald-500" />,
+    text: 'Skilled in Next.js, leveraging server-side rendering, static site generation, and dynamic routing to build high-performance and scalable web applications.',
+  },
+  {
+    id: nanoid(),
+    title: 'TailwindCss',
+    icon: <SiTailwindcss className="h-16 w-16 text-emerald-500" />,
+    text: 'Skilled in Next.js, leveraging server-side rendering, static site generation, and dynamic routing to build high-performance and scalable web applications.',
+  },
+  {
+    id: nanoid(),
+    title: 'Node.js',
+    icon: <SiNodedotjs className="h-16 w-16 text-emerald-500" />,
+    text: 'Skilled in Next.js, leveraging server-side rendering, static site generation, and dynamic routing to build high-performance and scalable web applications.',
+  },
+  {
+    id: nanoid(),
+    title: 'TypeScript',
+    icon: <SiTypescript className="h-16 w-16 text-emerald-500" />,
+    text: 'Skilled in Next.js, leveraging server-side rendering, static site generation, and dynamic routing to build high-performance and scalable web applications.',
+  },
+  {
+    id: nanoid(),
+    title: 'Clerk',
+    icon: <SiClerk className="h-16 w-16 text-emerald-500" />,
+    text: 'Skilled in Next.js, leveraging server-side rendering, static site generation, and dynamic routing to build high-performance and scalable web applications.',
+  },
+  {
+    id: nanoid(),
+    title: 'ReactQuery',
+    icon: <SiReactquery className="h-16 w-16 text-emerald-500" />,
+    text: 'Skilled in Next.js, leveraging server-side rendering, static site generation, and dynamic routing to build high-performance and scalable web applications.',
+  },
+  {
+    id: nanoid(),
+    title: 'AWS',
+    icon: <FaAws className="h-16 w-16 text-emerald-500" />,
+    text: 'Skilled in Next.js, leveraging server-side rendering, static site generation, and dynamic routing to build high-performance and scalable web applications.',
+  },
+  {
+    id: nanoid(),
+    title: 'Stripe',
+    icon: <FaStripe className="h-16 w-16 text-emerald-500" />,
+    text: 'Skilled in Next.js, leveraging server-side rendering, static site generation, and dynamic routing to build high-performance and scalable web applications.',
+  },
+  {
+    id: nanoid(),
+    title: 'Mysql',
+    icon: <SiMysql className="h-16 w-16 text-emerald-500" />,
+    text: 'Skilled in Next.js, leveraging server-side rendering, static site generation, and dynamic routing to build high-performance and scalable web applications.',
   },
 ]
 

@@ -1,43 +1,29 @@
-import React, { useEffect, useState } from 'react'
 import { CiLight } from 'react-icons/ci'
 import { MdDarkMode } from 'react-icons/md'
+import { BiDownArrowAlt } from 'react-icons/bi'
+import resume from './assets/4_6_RewatiRamanPrasad_Resume.pdf'
 
-function MainLayout({ children }) {
-  const [darkMode, setDarkMode] = useState(false)
-
-  const handleDarkMode = () => {
-    localStorage.setItem('theme', 'dark')
-    setDarkMode(!darkMode)
-  }
-
-  const handleLightMode = () => {
-    localStorage.setItem('theme', 'light')
-    setDarkMode(!darkMode)
-  }
-
-  useEffect(() => {
-    let theme = localStorage.getItem('theme')
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark')
-    }
-    if (theme === 'light') {
-      document.documentElement.classList.remove('dark')
-    }
-  }, [localStorage.getItem('theme')])
-
+function MainLayout({ darkMode, handleDarkMode, handleLightMode, children }) {
   return (
-    <div className={`relative`}>
+    <div className="relative">
       {children}
-      <button
-        className="p-2 border overflow-visible rounded-full shadow-xl float-right border-black fixed bottom-12 right-12 dark:bg-slate-400  "
-        onClick={!darkMode ? handleDarkMode : handleLightMode}
-      >
-        {darkMode ? (
-          <CiLight className="h-8 w-8" />
-        ) : (
-          <MdDarkMode className="h-8 w-8" />
-        )}
-      </button>
+      <div className="block lg:hidden md:hidden">
+        <button
+          className="p-2 border border-emerald-600 dark:border-black bg-emerald-500  overflow-visible rounded-full shadow-xl float-right border-black fixed bottom-28 right-14 dark:bg-slate-700"
+          onClick={!darkMode ? handleDarkMode : handleLightMode}
+        >
+          {darkMode ? (
+            <CiLight className=" text-white" />
+          ) : (
+            <MdDarkMode className="" />
+          )}
+        </button>
+        <button className="p-2 border dark:border-black bg-emerald-500 border-emerald-600  overflow-visible rounded-full shadow-xl float-right border-black fixed bottom-12 right-12 dark:bg-slate-700">
+          <a href={resume} download="resume">
+            <BiDownArrowAlt className="h-8 w-8 text-white animate-bounce" />
+          </a>
+        </button>
+      </div>
     </div>
   )
 }

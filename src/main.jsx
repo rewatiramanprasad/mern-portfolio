@@ -6,8 +6,7 @@ import MainLayout from './MainLayout.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <MainLayout>
       <App />
-    </MainLayout>
+    
   </StrictMode>
 )

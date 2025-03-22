@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaGithubSquare } from 'react-icons/fa'
 import { TbWorldWww } from 'react-icons/tb'
 

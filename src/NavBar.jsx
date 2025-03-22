@@ -24,7 +24,7 @@ export default function NavBar({ darkMode, handleDarkMode, handleLightMode }) {
         <div className="flex hidden gap-4 md:flex lg:flex  ">
           <button
             title="mode"
-            className=" animate- rounded p-1 bg-emerald-500 dark:bg-slate-700"
+            className=" animate- rounded p-1 bg-emerald-600 dark:bg-slate-700"
             onClick={!darkMode ? handleDarkMode : handleLightMode}
           >
             {darkMode ? (
@@ -35,7 +35,7 @@ export default function NavBar({ darkMode, handleDarkMode, handleLightMode }) {
           </button>
           <button
             title="download resume"
-            className=" rounded p-1 bg-emerald-500 dark:bg-slate-700"
+            className=" rounded p-1 bg-emerald-600 dark:bg-slate-700"
           >
             <a href={resume} download="resume">
               <BiDownArrowAlt className="h-8 w-8 animate-bounce dark:text-white" />

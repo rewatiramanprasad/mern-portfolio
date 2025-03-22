@@ -7,7 +7,7 @@ function Home() {
       <div className=" grid md:grid-cols-2 align-element">
         <article>
           <h1 className="text-7xl dark:text-white font-bold tracking-wider">
-            I'm Raman
+            I&apos;m Raman
           </h1>
           <p className=" mt-4 text-3xl text-slate-700 capitalize tracking-wider ">
             Full Stack Developer

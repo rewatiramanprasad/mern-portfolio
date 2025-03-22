@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import NavBar from './NavBar'
 import Home from './Home'
 import Skills from './Skills'

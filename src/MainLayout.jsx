@@ -4,7 +4,6 @@ import { MdDarkMode } from 'react-icons/md'
 
 function MainLayout({ children }) {
   const [darkMode, setDarkMode] = useState(false)
-  console.log(darkMode)
 
   const handleDarkMode = () => {
     localStorage.setItem('theme', 'dark')

@@ -3,16 +3,20 @@ import { CiLight } from 'react-icons/ci'
 import { MdDarkMode } from 'react-icons/md'
 
 function MainLayout({ children }) {
+  const [darkMode, setDarkMode] = useState(false)
+  console.log(darkMode)
+
   const handleDarkMode = () => {
     localStorage.setItem('theme', 'dark')
+    setDarkMode(!darkMode)
   }
 
   const handleLightMode = () => {
     localStorage.setItem('theme', 'light')
+    setDarkMode(!darkMode)
   }
 
   useEffect(() => {
-    console.log('its me')
     let theme = localStorage.getItem('theme')
     if (theme === 'dark') {
       document.documentElement.classList.add('dark')

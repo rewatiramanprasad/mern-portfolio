@@ -20,7 +20,7 @@ function MainLayout({ darkMode, handleDarkMode, handleLightMode, children }) {
         </button>
         <button className="p-2 border dark:border-black bg-emerald-500 border-emerald-600  overflow-visible rounded-full shadow-xl float-right border-black fixed bottom-12 right-12 dark:bg-slate-700">
           <a href={resume} download="resume">
-            <BiDownArrowAlt className="h-8 w-8 text-white animate-bounce" />
+            <BiDownArrowAlt className="h-8 w-8 dark:text-white animate-bounce" />
           </a>
         </button>
       </div>

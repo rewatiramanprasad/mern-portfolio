@@ -38,7 +38,7 @@ export default function NavBar({ darkMode, handleDarkMode, handleLightMode }) {
             className=" rounded p-1 bg-emerald-500 dark:bg-slate-700"
           >
             <a href={resume} download="resume">
-              <BiDownArrowAlt className="h-8 w-8 animate-bounce text-white" />
+              <BiDownArrowAlt className="h-8 w-8 animate-bounce dark:text-white" />
             </a>
           </button>
         </div>

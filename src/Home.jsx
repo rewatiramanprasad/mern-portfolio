@@ -15,15 +15,15 @@ function Home() {
           <p className=" mt-2 text-lg text-slate-700 tracking-wider">
             Turning Ideas into Interactive Reality
           </p>
-          <div className="flex gap-x-4 mt-4">
+          <div className="flex gap-x-4 mt-4 ">
             <a href="https://github.com/rewatiramanprasad">
-              <FaGithubSquare className="h-8 w-8 text-slate-700 dark:text-emerald-600  hover:text-black duration-300" />
+              <FaGithubSquare className="h-8 w-8 text-slate-700 dark:text-emerald-600  hover:text-black  animate-bounce-one" />
             </a>
             <a href="https://www.linkedin.com/in/rewatiramanprasad/">
-              <FaLinkedin className="h-8 w-8 text-slate-700 dark:text-emerald-600   hover:text-black duration-300 " />
+              <FaLinkedin className="h-8 w-8 text-slate-700 dark:text-emerald-600   hover:text-black animate-bounce-one animation-delay-500" />
             </a>
             <a href="#twitter">
-              <FaTwitterSquare className="h-8 w-8 text-slate-700 dark:text-emerald-600   hover:text-black duration-300 " />
+              <FaTwitterSquare className="h-8 w-8 text-slate-700 dark:text-emerald-600   hover:text-black animate-bounce-one  animation-delay-1000" />
             </a>
           </div>
         </article>

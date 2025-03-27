@@ -11,6 +11,12 @@
   .paused {
     animation-play-state: paused;
   }
+  .animation-delay-500 {
+    animation-delay: 0.5s;
+  }
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
 }
 
 @layer base {
